@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sort Fruits in Descending Order</title>
+  <script>
+    function sortFruits() {
+      const fruits = ["Banana", "Apple", "Cherry", "Mango", "Pineapple"];
+      fruits.sort().reverse(); // Sort and reverse to get descending order
+      document.getElementById("fruitList").innerHTML = fruits.join(", ");
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Fruit Sorting Example</h1>
+  <button onclick="sortFruits()">Sort Fruits in Descending Order</button>
+  <p id="fruitList"></p>
+
+</body>
+</html>

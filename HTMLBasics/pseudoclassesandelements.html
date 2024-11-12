@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-classes and Pseudo-elements Example</title>
+  <style>
+    /* CSS for pseudo-classes and pseudo-elements */
+
+    /* Change color of links when hovered */
+    a:hover {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    /* Style for first line of each paragraph */
+    p::first-line {
+      font-weight: bold;
+      color: darkred;
+    }
+
+    /* Style for the first letter of each paragraph */
+    p::first-letter {
+      font-size: 1.5em;
+      color: #4CAF50;
+    }
+
+    /* Change text color when hovering over an element with class "highlight" */
+    .highlight:hover {
+      color: green;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Example of Pseudo-classes and Pseudo-elements</h1>
+
+  <p>This is a simple paragraph. The first line and first letter will have special styles applied using pseudo-elements.</p>
+
+  <a href="#">Hover over me to change color</a>
+
+  <p class="highlight">This text will change color when you hover over it.</p>
+
+</body>
+</html>

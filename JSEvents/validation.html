@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation Example</title>
+  <script>
+    function validateForm() {
+      const input = document.getElementById("textInput").value;
+      if (input === "") {
+        alert("Text box cannot be empty!");
+        return false; // Prevent form submission
+      }
+      return true; // Proceed with form submission
+    }
+  </script>
+</head>
+<body>
+
+  <form onsubmit="return validateForm()">
+    <label for="textInput">Enter Text:</label>
+    <input type="text" id="textInput" name="textInput">
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

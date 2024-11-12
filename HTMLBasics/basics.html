@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basics of HTML</title>
+  <style>
+    /* Styling for pseudo-classes and elements (explained later) */
+    a:hover {
+      color: blue; /* Hover color for links */
+    }
+    p::first-line {
+      font-weight: bold; /* Bold first line of paragraphs */
+    }
+    .highlight:hover {
+      color: green; /* Change text color on hover */
+    }
+  </style>
+</head>
+<body>
+  <!-- Page heading -->
+  <h1>Welcome to My Basic HTML Page</h1>
+
+  <!-- Paragraph with some basic formatting tags -->
+  <p>HTML is a <em>markup language</em> that defines the <strong>structure</strong> of web pages. It uses a variety of tags to format and display content.</p>
+
+  <!-- Anchor tag for navigation within the page -->
+  <a href="#section2">Go to Section 2</a>
+
+  <!-- Unordered list -->
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <!-- Blockquote example -->
+  <blockquote cite="https://www.example.com">
+    "The purpose of a website is to convert visitors into prospects." - Unknown
+  </blockquote>
+
+  <!-- Horizontal rule -->
+  <hr>
+
+  <!-- Image with alternative text -->
+  <div>
+    <img src="example.jpg" alt="Example Image" width="200" height="150">
+  </div>
+
+  <!-- Division with span element -->
+  <div>
+    <p id="section2">This is <span class="highlight">Section 2</span>.</p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+  </div>
+
+  <!-- Additional content to demonstrate navigation within the page -->
+  <h2>HTML Tags and Their Uses</h2>
+  <p>Below is a brief description of the HTML tags used in this document.</p>
+  
+  <ul>
+    <li><strong>&lt;html&gt;</strong> - Root element that contains all other HTML elements.</li>
+    <li><strong>&lt;head&gt;</strong> - Contains metadata, title, and links to styles/scripts.</li>
+    <li><strong>&lt;body&gt;</strong> - Contains the main content of the web page.</li>
+    <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - Headings of different levels.</li>
+    <li><strong>&lt;p&gt;</strong> - Defines a paragraph.</li>
+    <li><strong>&lt;em&gt; and &lt;strong&gt;</strong> - Italicize and bold text, respectively.</li>
+    <li><strong>&lt;a&gt;</strong> - Anchor tag used for links.</li>
+    <li><strong>&lt;ul&gt; and &lt;li&gt;</strong> - Unordered list and list items.</li>
+    <li><strong>&lt;blockquote&gt;</strong> - Defines a blockquote section.</li>
+    <li><strong>&lt;hr&gt;</strong> - Creates a horizontal rule.</li>
+    <li><strong>&lt;img&gt;</strong> - Embeds an image.</li>
+    <li><strong>&lt;div&gt; and &lt;span&gt;</strong> - Division and inline elements for grouping content.</li>
+    <li><strong>&lt;label&gt;</strong> - Labels for form controls.</li>
+  </ul>
+</body>
+</html>

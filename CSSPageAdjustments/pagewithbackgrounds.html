@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiple Background Images</title>
+  <style>
+    .multi-bg {
+      background-image: url('image.jpg'), url('weather.jpg');
+      background-size: 50%, 50%;
+      background-position: left top, right bottom;
+      background-repeat: no-repeat;
+      height: 500px;
+      width: 100%;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="multi-bg">
+    <p>This div has multiple background images.</p>
+  </div>
+</body>
+</html>

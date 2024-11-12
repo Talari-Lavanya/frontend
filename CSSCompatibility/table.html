@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Table Layout</title>
+  <style>
+    /* Table with fixed layout */
+    .table-fixed {
+      width: 100%;
+      table-layout: fixed; /* Fixes the column width */
+      border-collapse: collapse;
+    }
+    /* Table with auto layout */
+    .table-auto {
+      width: 100%;
+      table-layout: auto; /* Default setting allows columns to resize */
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Table with Fixed Layout</h2>
+  <table class="table-fixed">
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+  </table>
+
+  <h2>Table with Auto Layout</h2>
+  <table class="table-auto">
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+      <th>Column 3</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+  </table>
+</body>
+</html>
